@@ -1,0 +1,21 @@
+.navbar-item a{
+    padding-left: 50px;
+}
+
+.content-icon i {
+    font-size: 50px;
+    padding-right: 150px;
+  }
+
+  .navbar-brand i{
+    font-size: 35px;
+  }
+
+  .navbar-brand b{
+    padding-left: 20px;
+  }
+
+  .plus i{
+    font-size: 50px;
+    padding-right: 25px;
+  }
