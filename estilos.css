@@ -1,14 +1,13 @@
-.navbar-item a{
-    padding-left: 50px;
+.navigator{
+  padding-left: 50px;
 }
-
 .content-icon i {
     font-size: 50px;
     padding-right: 150px;
   }
 
   .navbar-brand i{
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .navbar-brand b{
@@ -18,4 +17,5 @@
   .plus i{
     font-size: 50px;
     padding-right: 25px;
+    padding-left: 300px;
   }
