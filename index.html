@@ -26,25 +26,34 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!--Barra de busqueda del navbar con icono incorporado @ArmandoDominguezz-->
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-          <input type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
-        </div>
+          <div class="navbar-nav col-3 col-md-auto">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+         </div>
 
-        <div class = "navigator">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--<div class = "navigator"> -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
           </ul>
-        </div>
+        <!--</div>-->
        
-        <div class="plus">
+        <hr class="text-black-75">
+        <ul class="navbar-nav flex-row flex-wrap">
+          <li class="nav-item col-6 col-md-auto p-3" style= "font-size: 2em;">
+            <i class="bi bi-plus-circle-fill"></i>
+          </li>
+          <li class="nav-item col-6 col-md-auto p-3" style= "font-size: 2em;">
+            <i class="bi bi-cart-plus-fill"></i>
+          </li>
+        </ul>
+        <!--<div class="plus">
           <i class="bi bi-plus-circle-fill"></i>
         </div>
         <div class="content-icon">
           <i class="bi bi-cart-plus-fill"></i>
-        </div>
+        </div> -->
         
       </div>
     </div>
