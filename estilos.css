@@ -1,49 +1,31 @@
-.content-icon i {
-    font-size: 50px;
-    padding-right: 150px;
-  }
+ .input-group {
+   margin-right: 20px;
+   border-radius: 25px;
+   /*no moficar esto @ArmandoDominguezz*/
+ }
 
-  .navbar-brand i{
-    font-size: 45px;
-  }
-
-  .navbar-brand b{
-    padding-left: 20px;
-  }
-
-  .plus i{
-    font-size: 50px;
-    padding-right: 25px;
-    padding-left: 300px;
-  }
-
-  .input-group {
-    margin-right: 20px;
-    border-radius: 25px; /*no moficar esto @ArmandoDominguezz*/
-  }
-
-  /*clase del espan que contiene el icono de buscar del navbar. redondea los bordes y add color white @ArmandoDominguezz*/
+ /*clase del espan que contiene el icono de buscar del navbar. redondea los bordes y add color white @ArmandoDominguezz*/
  .input-group-text {
-    background-color: white;
-    border-radius: 20px;
-  }
+   background-color: white;
+   border-radius: 20px;
+ }
 
-  /*Clase del input buscar del navbar. aqui se redondea la parte derecha del input y se quita el borde izquierdo @ArmandoDominguezz*/
-  .form-control {
-    border-radius: 20px;
-    border-style: solid solid solid none;
-  }
+ /*Clase del input buscar del navbar. aqui se redondea la parte derecha del input y se quita el borde izquierdo @ArmandoDominguezz*/
+ .form-control {
+   border-radius: 20px;
+   border-style: solid solid solid none;
+ }
 
-  /* se quita la sombra que genera el focus al hacer clic sobre el input de buscar @ArmandoDominguezz*/
-  input.form-control:focus {
-    /*outline:none;
+ /* se quita la sombra que genera el focus al hacer clic sobre el input de buscar @ArmandoDominguezz*/
+ input.form-control:focus {
+   /*outline:none;
     outline-width: 0;*/
-    box-shadow: none;
-    /*-moz-box-shadow: none;
+   box-shadow: none;
+   /*-moz-box-shadow: none;
     -webkit-box-shadow: none;*/
-}
+ }
 
-/*Se modifica la sombra para que encierre todo el input de buscar junto con el icono a la hora de hacer focus sobre el input @ArmandoDominguezz*/
-.input-group:focus-within {
-  box-shadow: 0px 0px 10px rgba(31, 165, 255, 0.7);
-}
+ /*Se modifica la sombra para que encierre todo el input de buscar junto con el icono a la hora de hacer focus sobre el input @ArmandoDominguezz*/
+ .input-group:focus-within {
+   box-shadow: 0px 0px 10px rgba(31, 165, 255, 0.7);
+ }
