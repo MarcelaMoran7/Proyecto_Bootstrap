@@ -1,31 +1,33 @@
- .input-group {
-   margin-right: 20px;
-   border-radius: 25px;
-   /*no moficar esto @ArmandoDominguezz*/
+ *, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
  }
 
- /*clase del espan que contiene el icono de buscar del navbar. redondea los bordes y add color white @ArmandoDominguezz*/
- .input-group-text {
-   background-color: white;
-   border-radius: 20px;
+ span > input{
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  /*left: 2%;
+  top: 150px;*/
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  background: #64b4db;
+  -webkit-transition:  left .2s;
+  -o-transition: left .2s;
+  transition: left .2s;
  }
 
- /*Clase del input buscar del navbar. aqui se redondea la parte derecha del input y se quita el borde izquierdo @ArmandoDominguezz*/
- .form-control {
-   border-radius: 20px;
-   border-style: solid solid solid none;
- }
-
- /* se quita la sombra que genera el focus al hacer clic sobre el input de buscar @ArmandoDominguezz*/
- input.form-control:focus {
-   /*outline:none;
-    outline-width: 0;*/
-   box-shadow: none;
-   /*-moz-box-shadow: none;
-    -webkit-box-shadow: none;*/
- }
-
- /*Se modifica la sombra para que encierre todo el input de buscar junto con el icono a la hora de hacer focus sobre el input @ArmandoDominguezz*/
- .input-group:focus-within {
-   box-shadow: 0px 0px 10px rgba(31, 165, 255, 0.7);
- }
+ .footer {
+    padding-top: 5px;
+    padding-left: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    background-color: #b49634;
+  }
