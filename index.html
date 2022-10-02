@@ -2,88 +2,90 @@
 <html lang="en">
 
 <head>
+
+  <!-- Requiere Etiquetas De Metadatos -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ventascelulares</title>
+
+  <!-- Bootstrap CSS Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!-- Estilos CSS Personales -->
   <link rel="stylesheet" href="estilos.css">
-  <style>
-    .navbar-brand {
-      padding-left: 10px;
-      padding-right: 50px;
-      font-size: 25px;
-    }
-  </style>
+
+  <!-- Titulo De La Ventana En El Navegador -->
+  <title>ventascelulares</title>
 
 </head>
 
+<!-- Cuerpo De La Pagina -->
 <body>
 
-  <!-- Barra De Navegación -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-
+  <!-- Toda La Barra De Navegacion -->
+  <nav class="navbar navbar-expand-md bg-light py-3">
     <div class="container-fluid">
-
-      <!-- Megafono Y Encabezado -->
-      <a class="navbar-brand m-0 p-0 pe-3" href="#"><i class="bi bi-megaphone" style="font-size: 30px;"></i> <b> Tienda
-          CellPhone</b></a>
-
-      <!-- Boton Toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        
+      <!-- Boton Hamburguesa Para Pantallas Pequeñas -->
+      <button class="navbar-toggler me-3 mb-2 btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon "><h2><i class="bi bi-list text-info"></h2></i></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--Barra de busqueda mejorado con responsive
-        <form class="d-flex w-50" >
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+      <!-- Buscador Solo Para Pantallas Puqueñas A La Par del Boton Hamburguesa-->
+        <!--<form class="d-flex d-md-none flex-fill" role="search">
+            <span class="input-group-text rounded-pill rounded-end border-end-0 bg-white pe-0" id="basic-addon1"><i class="bi bi-search"></i></span>
+            <input class="form-control me-2 rounded-pill rounded-start border border-start-0 shadow-none" type="search" placeholder="Buscar..." aria-label="Search">    
         </form>-->
-        <!--Para cambiar el tamaño del input solo modificar el w-50-->
-        <div class="input-group w-50">
-          <span class="input-group-text rounded-pill rounded-end bg-white pe-0" id="basic-addon1"><i
-              class="bi bi-search"></i></span>
-          <input type="text" class="form-control rounded-pill rounded-start border border-start-0 shadow-none"
-            placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+
+      <!-- Megafono y titulo pagina -->
+      <a class="navbar-brand text-dark d-none d-md-block fs-3 ms-5 mt-0 pt-0 pb-3" href="#"><i class="bi bi-megaphone pe-3"></i><b>Tienda CellPhone</b></a>
+
+      <!-- Buscador Pantallas Medianas Hacia Arriba-->
+      <form class="d-flex flex-fill mb-2" role="search">
+        <span class="input-group-text rounded-pill rounded-end border-end-0 bg-white " id="basic-addon1"><i class="bi bi-search"></i></span>
+        <input class="form-control me-2 rounded-pill rounded-start border border-start-0 shadow-none " type="search" placeholder="Buscar..." aria-label="Search">    
+      </form>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-start-0 border-end-0 border-top-0 border-1 border-bottom border-warning">
+             <!-- Megafono y titulo pagina -->
+      <a class="navbar-brand text-dark fs-3 ms-3 mt-0 pt-0 pb-3" href="#"><i class="bi bi-megaphone pe-3"></i><b>Tienda CellPhone</b></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
-        <!-- 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3 col-sm-6 col-lg-4">
-          <li class="nav-item">
-            <a class="nav-link active bg-primary text-white px-3 rounded-2" aria-current="page" href="#">Inicio</a>
+        <!-- Boton De Inicio d-none d-md-block-->
+        <ul class="navbar-nav">
+          <li class="nav-item ms-md-3 me-md-5 mt-md-1">
+            <a class="nav-link active bg-primary text-white rounded-0 px-4 d-none d-md-block" aria-current="page" href="#">Inicio</a>
+            <a href="#" target="_blank" class="btn btn-md d-block d-md-none text-dark rounded-0 ">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active bg-danger text-white px-3 ms-2 rounded-2" aria-current="page"
-              href="#">Estadisticas</a>
-          </li>
+          <li class="nav-item me-md-3 ms-md-3">
+            <a href="./agregar.html" class="btn btn-link btn-lg m-0 p-0 d-none d-md-block" target="_blank" >
+              <!--<i class="bi bi-plus-circle-fill"></i> d-none d-md-block-->
+              <h1><i class="bi bi-plus-circle-fill text-info"></i></h1>
+            </a>
+            <a href="./agregar.html" target="_blank" class="btn btn-md d-block d-md-none text-dark rounded-0 border-start-0 border-end-0 border-1 border-bottom-0 border-warning">Nuevo Anuncio</a>
+        </li>
+        <li class="nav-item ms-md-3"><!-- p-2 m-4 -->
+          <button class="btn btn-link btn-lg m-0 p-0 d-none d-md-block">
+            <h1><i class="bi bi-cart-plus-fill text-info"></i></h1>
+          </button>
+          <a href="#" target="_blank" class="btn btn-md d-block d-md-none text-dark rounded-0 border-start-0 border-end-0 border-1 border-bottom border-warning">Carrito</a>
+        </li>
         </ul>
-        <hr class="text-black-75">
-        <ul class="navbar-nav flex-row me-5">
-          <li class="nav-item col-12 col-md-auto p-2 m-4"
-            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-              <a href="./agregar.html" class="btn btn-link btn-outline-dark btn-lg">
-                <i class="bi bi-plus-circle-fill"></i>
-              </a>
-              
-            
+
+        <!-- Solo para pantallas pequeñas Se haran Modificaciones! 
+        <ul class="navbar-nav me-auto d-md-none mt-2">
+          <li class="nav-item">
+            <a class="nav-link active bg-primary text-white ms-3 me-3 rounded-2 px-3" aria-current="page" href="#">Inicio</a>
           </li>
-          <li class="nav-item col-12 col-md-auto p-2 m-4"
-            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-            <button class="btn btn-link btn-outline-dark btn-lg "> <i class="bi bi-cart-plus-fill"></i></button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        </ul>-->
+        
+    </div> <!--Fin Conteiner-Fluid-->
+  </nav> <!--Fin Navbar-->
+
 
   <!-- Boton Ofcanvas-->
   <div class="form-check form-switch m-2">
