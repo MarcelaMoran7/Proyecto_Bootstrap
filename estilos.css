@@ -20,18 +20,9 @@
   -o-transition: left .2s;
   transition: left .2s;
  }
-
- .footer {
-    padding-top: 5px;
-    padding-left: 20%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 50px;
-    background-color: #b49634;
+  .card:hover{
+    transform: scale(1.1);
   }
-
-  .titular{
-    color:rgba(245, 224, 91, 0.97);
-  }
+   .card{
+    transition: transform .5s;
+   }
