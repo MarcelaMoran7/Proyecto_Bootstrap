@@ -21,7 +21,6 @@
 
 <!-- Cuerpo De La Pagina -->
 <body style="background-image: url(imagenes/ama.jpg); background-size: cover;">
-
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2">
       <div class="col col-lg-6 col-md-12 col-sm-12" style="padding-top: 3em;">
@@ -91,36 +90,48 @@
           </button>
         </div>
       </div>
+
       <div class="col col-lg-6 col-sm-12" style="padding-top: 3em;">
         <p style=" font-family: 'Righteous', cursive; font-size: 25px; color:rgb(151, 90, 11);"> Iphone 6 pantalla de 8
           pulgadas, 64 Gb internos, 2Gb de Ram, solo banda Tigo, nuevo</p>
         <p class="text-center" style="font-family:Arial, Helvetica, sans-serif; font-size:2em"> $235.00</p>
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-warning btn-lg">Comprar</button>
+          <div class="d-flex fixed-bottom d-sm-none justify-content-center mb-1">
+            <button type="button" class="btn btn-dark opacity-25 btn-lg px-5 me-2">Inicio</button>
+            <button type="button" class="btn btn-dark btn-lg px-4">Comprar</button>
+          </div>
+          <button type="button" class="btn btn-warning btn-lg d-none d-sm-block px-5">Comprar</button>
         </div>
 
-        <!--(OJO) En esta parte voy a hacer cambios -->
-        <div style="border: 2px black solid; margin-top: 10px;">
-          <!--<div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="text" aria-label="First name" class="form-control" placeholder="Juan Perez">
-          </div>-->
+        <!-- (style="border: 2px black solid; margin-top: 10px;") -->
+        <div class="border border-2 border-dark mt-3">
+          <!-- Vendedor y telefono mostrar en una fila pantallas arriba de sm -->
           <div class="input-group p-2 ps-0">
+            <span class="input-group-text rounded-0 bg-transparent border-0 d-none d-sm-block">Vendedor: </span>
+            <input type="text" disabled aria-label="First name" class="form-control d-none d-sm-block bg-white border-0" placeholder="Juan Perez">
+            <span class="input-group-text bg-transparent border-0 d-none d-sm-block">Telefono: </span>
+            <input type="text" disabled aria-label="Last name" class="form-control rounded-0 d-none d-sm-block bg-white border-0" placeholder="7374-2312">
+          </div>
+          <!-- Vendedor y telefono mostrar en varias filas panalla pequeña sm -->
+          <div class="pb-4 px-2 d-sm-none">
             <span class="input-group-text rounded-0 bg-transparent border-0">Vendedor: </span>
-            <input type="text" aria-label="First name" class="form-control" placeholder="Juan Perez">
+            <input type="text" disabled aria-label="First name" class="form-control bg-white border-0" placeholder="Juan Perez">
             <span class="input-group-text bg-transparent border-0 ">Telefono: </span>
-            <input type="text" aria-label="Last name" class="form-control rounded-0 " placeholder="7374-2312">
+            <input type="text" disabled aria-label="Last name" class="form-control rounded-0 bg-white border-0" placeholder="7374-2312">
           </div>
         </div> 
-        <!-- Hasta aqui -->
         
       </div>
+
     </div>
   </div>
-  <h2 class="text-center" style="margin-top: 2em;font-family: 'Righteous', cursive;">DESCRIPCION</h2>
+
+  <h2 class="text-center d-none d-sm-block" style="margin-top: 2em; font-family: 'Righteous', cursive;">DESCRIPCION</h2>
+
   <div class="container" style="margin-top: 2em;font-family: 'Anonymous Pro', monospace;">
     <div class="row row-cols-1 row-cols-sm-2">
-      <div class="col col-lg-6 col-sm-6 p-2">
+
+      <div class="col col-lg-6 col-sm-6 pt-0 p-2">
         <div class="card bg-warning" style="width:auto; font-size: 15px;">
           <div class="card-body">
             <p class="card-text">Estado: Nuevo</p>
@@ -130,12 +141,11 @@
             <p class="card-text">Sistema: Ios</p>
             <p class="card-text">RAM: 64 Gb</p>
             <p class="card-text">Rom: 2 Gb</p>
-
           </div>
         </div>
-
       </div>
-      <div class="col col-lg-6 col-sm-6 p-2">
+
+      <div class="col col-lg-6 col-sm-6 pt-0 p-2">
         <div class="card bg-warning" style="width: auto; height: 18rem;font-family: 'Anonymous Pro', monospace;">
           <div class="card-body">
             <p class="card-text">Telefono en muy buenas condiciones, tiene dos camaras, la caja esta abierta, pero con
@@ -143,9 +153,7 @@
               viene con su caja original y con todos sus accesorios. Puedo mandar mas fotos si desea por WhatsApp </p>
           </div>
         </div>
-
       </div>
-
     </div>
 
   </div>
