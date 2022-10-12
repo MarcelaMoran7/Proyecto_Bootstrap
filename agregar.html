@@ -46,7 +46,7 @@
         <ul class="navbar-nav">
           <!-- Boton De Inicio d-none d-md-block-->
           <li class="nav-item ms-md-3 me-md-5 mt-md-1">
-            <a href="index.html" class="btn btn-md d-block d-md-none text-dark rounded-0 ">Inicio</a>
+            <a href="./index.html" class="btn btn-md d-block d-md-none text-dark rounded-0 ">Inicio</a>
           </li>
           <!-- Boton Nuevo Anuncio + -->
           <li class="nav-item me-md-3 ms-md-3">
@@ -111,16 +111,18 @@
                             <input type="text" id="texto" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                     </div>
+
                     <div class="col-auto">
                         <label for="texto" class="col-form-label">Sistema: </label>
                     </div>
-                    <div class="row g-3 align-items-center col-lg-5 col-md-3 col-sm-4">
+                    <div class="row g-3 align-items-center col-lg-5 col-md-3">
                         <select class="form-select" aria-label="Default select example">
                             <option value="1">Ios</option>
                             <option value="2">Android</option>
                             <option value="3">Windows</option>
                         </select>
                     </div>
+
                     <div class="row g-3 align-items-center">
                         <div class="col-auto">
                             <label for="texto" class="col-form-label">Rom: </label>
@@ -143,7 +145,7 @@
             <div class="col col-lg-5 col-sm-12 order-2 order-sm-2 order-lg-2"
                 style="margin-top: 2em; margin-left: 1em; color:rgb(110, 70, 32); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
                 <form>
-                    <div class="mb-3">
+                    <div class="mb-3 me-2">
                         <label for="exampleInputEmail1" class="form-label">
                             <h6>Titulo breve del anuncio</h6>
                         </label>
@@ -184,10 +186,10 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-md-end justify-content-sm-start justify-content-between" style="margin-top:25px;">
-                        <button class="btn btn-lg btn-outline-success me-md-2" type="button"><i
-                                class="bi bi-file-earmark-check"></i> Crear</button>
-                        <a href=index.html class="btn btn-lg btn-outline-danger me-2"><i class="bi bi-x-circle"></i>
+                        <a href=index.html class="btn btn-lg btn-outline-danger me-md-2 me-sm-2"><i class="bi bi-x-circle"></i>
                             Cancelar</a>
+                        <button class="btn btn-lg btn-outline-success me-2" type="button"><i
+                                class="bi bi-file-earmark-check"></i> Crear</button>
                     </div>
                 </form>
 
@@ -196,28 +198,28 @@
                 style="margin-top: 1em; background-color: rgb(196, 201, 191); border: 6px rgb(110, 70, 32) outset; border-radius: 60px/20px;">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2">
-                        <div class="col col-lg-2 col-sm-1">
-                            <div>
+                        <div class="col col-lg-2 col-sm-2 ">
+                            <!--<div>-->
                                 <button onclick="document.getElementById('getFile').click()"
                                     class="d-block border border-0 bg-transparent col-1-lg "
                                     style="padding-left: 20px; padding-top: 2em;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                                         class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z" />
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z" />
                                     </svg>
                                 </button>
                                 <input type='file' id="getFile" style="display:none">
-                            </div>
-                            <div>
+                            <!--</div>
+                            <div>-->
                                 <button class="d-block border border-0 bg-transparent col-1-lg "
-                                    style="padding-left: 20px; padding-top: 2em;"><svg
+                                    style="padding-left: 20px; padding-top: 2em;">
+                                    <svg
                                         xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                                         class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
-                                    </svg></i></button>
-                            </div>
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                                    </svg>
+                                </button>
+                            <!--</div>-->
                         </div>
                         <div class="col col-lg-9 col-sm-10" style="margin-top: 25px; margin-bottom: 25px">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
