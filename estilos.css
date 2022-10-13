@@ -35,3 +35,8 @@
   color: brown;
   font-weight: bold;
  }
+
+ input[type=radio]:checked +label{
+  color: green;
+  font-weight: bold;
+ }
