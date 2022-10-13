@@ -30,3 +30,8 @@
  .card {
    transition: transform .5s;
  }
+
+ input[type=checkbox]:checked +label{
+  color: brown;
+  font-weight: bold;
+ }
