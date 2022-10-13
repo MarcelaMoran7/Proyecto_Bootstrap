@@ -25,18 +25,62 @@
 
  .card:hover {
    transform: scale(1.1);
+   background-color: darkkhaki;
  }
 
  .card {
    transition: transform .5s;
  }
 
- input[type=checkbox]:checked +label{
-  color: brown;
-  font-weight: bold;
+ input[type=checkbox]:checked+label {
+   color: brown;
+   font-weight: bold;
  }
 
- input[type=radio]:checked +label{
-  color: green;
-  font-weight: bold;
+ input[type=radio]:checked+label {
+   color: green;
+   font-weight: bold;
+ }
+
+ @keyframes animation2 {
+   from {
+     transform: rotate(0);
+
+   }
+
+   to {
+     transform: rotate(360deg);
+
+   }
+ }
+
+ .rotate {
+   animation: animation2 2s 1 ease-in-out;
+ }
+
+ @keyframes shakeit {
+   0% {
+     transform: translateX(0);
+   }
+
+   1%,
+   3%,
+   5% {
+     transform: translateX(10px);
+   }
+
+   2%,
+   4%,
+   6% {
+     transform: translateX(-10px);
+   }
+
+   7% {
+     transform: translateX(0);
+   }
+
+ }
+
+ .shake {
+   animation: shakeit 5s infinite;
  }
